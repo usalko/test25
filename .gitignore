@@ -1,0 +1,6 @@
+# Local python environment specific
+.pip
+.venv
+.env
+# Python bytecode
+__pycache__
