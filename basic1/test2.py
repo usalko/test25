@@ -1,3 +1,6 @@
-'''
-Write a Python program to find out what version of Python you are using.
-'''
+# basic1/test2.py
+from sys import version
+
+
+def test2() -> str:
+    return version
