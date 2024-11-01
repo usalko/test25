@@ -1,9 +1,9 @@
 from unittest import TestCase
-from basic1 import test3
+from basic1 import test003
 from datetime import datetime
 
 
-class TestsBasic1Test3(TestCase):
+class TestsBasic1Test003(TestCase):
     '''
     Write a Python program to display the current date and time.
     Sample Output :
@@ -20,5 +20,5 @@ class TestsBasic1Test3(TestCase):
         current_minutes = tested_date_time.minute
         current_seconds = tested_date_time.second
         self.assertTrue(
-            test3(tested_date_time).startswith(f'{current_year:04d}-{current_month:02d}-{current_day:02d} {current_hours:02d}:{current_minutes:02d}:{current_seconds:02d}')
+            test003(tested_date_time).startswith(f'{current_year:04d}-{current_month:02d}-{current_day:02d} {current_hours:02d}:{current_minutes:02d}:{current_seconds:02d}')
         )

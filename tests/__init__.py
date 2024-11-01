@@ -1,3 +1,3 @@
-from .test_basic1_test1 import *
-from .test_basic1_test2 import *
-from .test_basic1_test3 import *
+from .test_basic1_test001 import *
+from .test_basic1_test002 import *
+from .test_basic1_test003 import *

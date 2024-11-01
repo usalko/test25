@@ -1,6 +1,6 @@
-# basic1/test1.py
+# basic1/test001.py
 
-def test1(input_string: str) -> str:
+def test001(input_string: str) -> str:
     result = ''
     maximal_margin_in_spaces = 8
     current_margin_in_spaces = 4

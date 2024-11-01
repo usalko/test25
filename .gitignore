@@ -6,3 +6,5 @@
 __pycache__
 # IDE specific
 .vscode
+# Pytest cache
+.pytest_cache

@@ -1,6 +1,6 @@
-# basic1/test2.py
+# basic1/test002.py
 from sys import version
 
 
-def test2() -> str:
+def test002() -> str:
     return version
