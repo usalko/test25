@@ -9,6 +9,9 @@ class TestsBasic1Test005(TestCase):
     '''
 
     def test_case1(self):
-        self.assertTrue(
-            test005(tested_date_time).startswith(f'{current_year:04d}-{current_month:02d}-{current_day:02d} {current_hours:02d}:{current_minutes:02d}:{current_seconds:02d}')
+        first_name = 'Ivan'
+        last_name = 'Usalko'
+        self.assertEqual(
+            test005(first_name, last_name),
+            'Usalko Ivan'
         )

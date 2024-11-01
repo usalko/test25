@@ -1,6 +1,8 @@
 # basic1/test006.py
-from datetime import datetime
+from typing import Tuple, List
 
-
-def test006(dt: datetime) -> str:
-    return dt.isoformat(' ')[0:4+1+2+1+2+1+2+1+2+1+2]
+def test006(input_string: str) -> Tuple[List[str], Tuple[str]]:
+    return (
+        list(input_string.split(',')),
+        tuple(input_string.split(',')),
+    )

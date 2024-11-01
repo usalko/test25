@@ -12,6 +12,10 @@ class TestsBasic1Test004(TestCase):
     '''
 
     def test_case1(self):
-        self.assertTrue(
-            test004(tested_date_time).startswith(f'{current_year:04d}-{current_month:02d}-{current_day:02d} {current_hours:02d}:{current_minutes:02d}:{current_seconds:02d}')
+        self.assertEqual(
+            test004(1.1),
+            '''
+r = 1.1
+Area = 3.8013271108436504
+'''
         )

@@ -1,6 +1,8 @@
 # basic1/test004.py
-from datetime import datetime
+from math import pi
 
-
-def test004(dt: datetime) -> str:
-    return dt.isoformat(' ')[0:4+1+2+1+2+1+2+1+2+1+2]
+def test004(circle_radius: float) -> str:
+    return f'''
+r = {circle_radius}
+Area = {pi * (circle_radius * circle_radius)}
+'''

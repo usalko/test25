@@ -13,6 +13,12 @@ class TestsBasic1Test006(TestCase):
     '''
 
     def test_case1(self):
-        self.assertTrue(
-            test006(tested_date_time).startswith(f'{current_year:04d}-{current_month:02d}-{current_day:02d} {current_hours:02d}:{current_minutes:02d}:{current_seconds:02d}')
+        ll, tt = test006('3, 5, 7, 23')
+        self.assertListEqual(
+            ll,
+            ['3', ' 5', ' 7', ' 23'],
+        )
+        self.assertTupleEqual(
+            tt,
+            ('3', ' 5', ' 7', ' 23'),
         )

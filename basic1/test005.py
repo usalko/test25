@@ -2,5 +2,5 @@
 from datetime import datetime
 
 
-def test005(dt: datetime) -> str:
-    return dt.isoformat(' ')[0:4+1+2+1+2+1+2+1+2+1+2]
+def test005(first_name: str, last_name: str) -> str:
+    return last_name + ' ' + first_name
