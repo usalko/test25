@@ -4,3 +4,6 @@ from .test_basic1_test003 import *
 from .test_basic1_test004 import *
 from .test_basic1_test005 import *
 from .test_basic1_test006 import *
+from .test_basic1_test007 import *
+from .test_basic1_test008 import *
+from .test_basic1_test009 import *

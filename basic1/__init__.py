@@ -4,3 +4,6 @@ from .test003 import *
 from .test004 import *
 from .test005 import *
 from .test006 import *
+from .test007 import *
+from .test008 import *
+from .test009 import *
