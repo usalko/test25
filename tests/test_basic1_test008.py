@@ -10,4 +10,7 @@ class TestsBasic1Test008(TestCase):
     '''
 
     def test_case1(self):
-        pass
+        self.assertTupleEqual(
+            test008(['Red', 'Green', 'White', 'Black']),
+            ('Red', 'Black'),
+        )

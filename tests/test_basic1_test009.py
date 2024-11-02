@@ -11,4 +11,7 @@ class TestsBasic1Test009(TestCase):
     '''
 
     def test_case1(self):
-        pass
+        self.assertEqual(
+            test009((11, 12, 2014)),
+            'The examination will start from : 11 / 12 / 2014',
+        )

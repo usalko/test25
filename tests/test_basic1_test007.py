@@ -11,4 +11,7 @@ class TestsBasic1Test007(TestCase):
     '''
 
     def test_case1(self):
-        pass
+        self.assertEqual(
+            test007('abc.java'),
+            'java',
+        )
