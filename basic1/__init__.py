@@ -7,3 +7,6 @@ from .test006 import *
 from .test007 import *
 from .test008 import *
 from .test009 import *
+from .test010 import *
+from .test011 import *
+from .test012 import *
