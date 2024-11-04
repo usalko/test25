@@ -15,6 +15,10 @@ heredoc string --------> example
 
     def test_case1(self):
         self.assertEqual(
-            test013(''),
-            '',
+            test013(),
+            '''Sample string :
+a string that you "don't" have to escape
+This
+is a ....... multi-line
+heredoc string --------> example''',
         )

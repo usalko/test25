@@ -12,6 +12,6 @@ Expected output : 9 days
 
     def test_case1(self):
         self.assertEqual(
-            test014(''),
-            '',
+            test014((2014, 7, 2), (2014, 7, 11)),
+            '9 days',
         )
