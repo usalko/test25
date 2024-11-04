@@ -11,4 +11,7 @@ class TestsBasic1Test010(TestCase):
     '''
 
     def test_case1(self):
-        pass
+        self.assertEqual(
+            test010(5),
+            615,
+        )

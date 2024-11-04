@@ -13,4 +13,7 @@ class TestsBasic1Test011(TestCase):
     '''
 
     def test_case1(self):
-        pass
+        self.assertEqual(
+            test011(abs),
+            'Return the absolute value of the argument.',
+        )
