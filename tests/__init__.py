@@ -10,3 +10,6 @@ from .test_basic1_test009 import *
 from .test_basic1_test010 import *
 from .test_basic1_test011 import *
 from .test_basic1_test012 import *
+from .test_basic1_test013 import *
+from .test_basic1_test014 import *
+from .test_basic1_test015 import *
