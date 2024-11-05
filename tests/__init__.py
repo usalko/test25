@@ -13,3 +13,6 @@ from .test_basic1_test012 import *
 from .test_basic1_test013 import *
 from .test_basic1_test014 import *
 from .test_basic1_test015 import *
+from .test_basic1_test016 import *
+from .test_basic1_test017 import *
+from .test_basic1_test018 import *
