@@ -16,3 +16,6 @@ from .test_basic1_test015 import *
 from .test_basic1_test016 import *
 from .test_basic1_test017 import *
 from .test_basic1_test018 import *
+from .test_basic1_test019 import *
+from .test_basic1_test020 import *
+from .test_basic1_test021 import *
