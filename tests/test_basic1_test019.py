@@ -11,4 +11,13 @@ class TestsBasic1Test019(TestCase):
     '''
 
     def test_case1(self):
-        pass
+        self.assertEqual(
+            test019('Is it a code?'),
+            'Is it a code?',
+        )
+
+    def test_case2(self):
+        self.assertEqual(
+            test019('long'),
+            'Islong',
+        )

@@ -10,4 +10,13 @@ class TestsBasic1Test021(TestCase):
     '''
 
     def test_case1(self):
-        pass
+        self.assertEqual(
+            test021(3),
+            '3 is odd number',
+        )
+
+    def test_case2(self):
+        self.assertEqual(
+            test021(2),
+            '2 is even number',
+        )

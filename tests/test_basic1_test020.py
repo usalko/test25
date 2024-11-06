@@ -9,4 +9,7 @@ class TestsBasic1Test020(TestCase):
     '''
 
     def test_case1(self):
-        pass
+        self.assertEqual(
+            test020('clone', 3),
+            'clonecloneclone',
+        )
