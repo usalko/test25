@@ -10,4 +10,25 @@ class TestsBasic1Test018(TestCase):
     '''
 
     def test_case1(self):
-        pass
+        self.assertEqual(
+            test018(1, 2, 3),
+            6,
+        )
+
+    def test_case2(self):
+        self.assertEqual(
+            test018(3, 3, 3),
+            27,
+        )
+
+    def test_case3(self):
+        self.assertEqual(
+            test018(2, 3, 3),
+            8,
+        )
+
+    def test_case4(self):
+        self.assertEqual(
+            test018(2, 2, 3),
+            7,
+        )
