@@ -10,4 +10,19 @@ class TestsBasic1Test023(TestCase):
     '''
 
     def test_case1(self):
-        pass
+        self.assertEqual(
+            test023('', 3),
+            '',
+        )
+
+    def test_case2(self):
+        self.assertEqual(
+            test023('1', 3),
+            '111',
+        )
+
+    def test_case3(self):
+        self.assertEqual(
+            test023('123', 6),
+            '121212121212',
+        )
