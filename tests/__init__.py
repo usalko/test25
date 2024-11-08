@@ -22,3 +22,6 @@ from .test_basic1_test021 import *
 from .test_basic1_test022 import *
 from .test_basic1_test023 import *
 from .test_basic1_test024 import *
+from .test_basic1_test025 import *
+from .test_basic1_test026 import *
+from .test_basic1_test027 import *
