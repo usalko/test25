@@ -14,4 +14,7 @@ class TestsBasic1Test029(TestCase):
     '''
 
     def test_case1(self):
-        pass
+        self.assertSetEqual(
+            test029(["White", "Black", "Red"], ["Red", "Green"]),
+            {'Black', 'White'},
+        )

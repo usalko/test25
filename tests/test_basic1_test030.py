@@ -9,4 +9,7 @@ class TestsBasic1Test030(TestCase):
     '''
 
     def test_case1(self):
-        pass
+        self.assertEqual(
+            test030(1, 2), 
+            1.0,
+        )
