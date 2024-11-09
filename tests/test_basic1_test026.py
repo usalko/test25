@@ -9,4 +9,11 @@ class TestsBasic1Test026(TestCase):
     '''
 
     def test_case1(self):
-        pass
+        self.assertEqual(
+            test026([1, 2, 1, 3]),
+            '''*
+**
+*
+***
+'''
+        )

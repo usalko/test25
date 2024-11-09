@@ -9,4 +9,7 @@ class TestsBasic1Test027(TestCase):
     '''
 
     def test_case1(self):
-        pass
+        self.assertEqual(
+            test027(['7', '5', '3', '1', '5', '9']),
+            '753159',
+        )

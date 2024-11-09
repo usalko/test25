@@ -1,4 +1,7 @@
 # basic1/test027.py
 
-def test027() -> any:
-    pass
+from typing import List
+
+
+def test027(input_list: List[str]) -> str:
+    return ''.join(input_list)

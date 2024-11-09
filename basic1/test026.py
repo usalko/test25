@@ -1,4 +1,10 @@
 # basic1/test026.py
 
-def test026() -> any:
-    pass
+from typing import List
+
+
+def test026(input_list: List[int]) -> str:
+    result = ''
+    for i in input_list:
+        result += '*' * i + '\n'
+    return result

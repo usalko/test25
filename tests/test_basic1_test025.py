@@ -12,4 +12,13 @@ class TestsBasic1Test025(TestCase):
     '''
 
     def test_case1(self):
-        pass
+        self.assertEqual(
+            test025([1, 5, 8, 3], 3),
+            True,
+        )
+
+    def test_case1(self):
+        self.assertEqual(
+            test025([1, 5, 8, 3], -1),
+            False,
+        )
