@@ -28,3 +28,6 @@ from .test_basic1_test027 import *
 from .test_basic1_test028 import *
 from .test_basic1_test029 import *
 from .test_basic1_test030 import *
+from .test_basic1_test031 import *
+from .test_basic1_test032 import *
+from .test_basic1_test033 import *
