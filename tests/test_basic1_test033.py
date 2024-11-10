@@ -1,6 +1,6 @@
 from unittest import TestCase
+
 from basic1 import test033
-from datetime import datetime
 
 
 class TestsBasic1Test033(TestCase):
@@ -9,4 +9,25 @@ class TestsBasic1Test033(TestCase):
     '''
 
     def test_case1(self):
-        pass
+        self.assertEqual(
+            test033(1, 2, 3), 
+            6,
+        )
+    
+    def test_case2(self):
+        self.assertEqual(
+            test033(2, 2, 3), 
+            0,
+        )
+        
+    def test_case3(self):
+        self.assertEqual(
+            test033(3, 2, 2), 
+            0,
+        )
+
+    def test_case4(self):
+        self.assertEqual(
+            test033(2, 3, 2), 
+            0,
+        )
