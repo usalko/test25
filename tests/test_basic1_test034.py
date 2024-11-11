@@ -1,5 +1,7 @@
 from unittest import TestCase
 
+from basic1 import test034
+
 
 class TestsBasic1Test034(TestCase):
     '''
@@ -7,5 +9,14 @@ class TestsBasic1Test034(TestCase):
     '''
 
     def test_case1(self):
-        pass
+        self.assertEqual(
+            test034(1, 2), 
+            3,
+        )
+
+    def test_case2(self):
+        self.assertEqual(
+            test034(17, 2), 
+            20,
+        )
     
