@@ -34,3 +34,6 @@ from .test_basic1_test033 import *
 from .test_basic1_test034 import *
 from .test_basic1_test035 import *
 from .test_basic1_test036 import *
+from .test_basic1_test037 import *
+from .test_basic1_test038 import *
+from .test_basic1_test039 import *
