@@ -12,7 +12,7 @@ class TestsBasic1Test038(TestCase):
 
     def test_case1(self):
         self.assertEqual(
-            test038(),
-            None,
+            test038(4, 3),
+            '(4 + 3) ^ 2 = 49',
         )
 

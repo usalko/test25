@@ -10,7 +10,9 @@ class TestsBasic1Test037(TestCase):
 
     def test_case1(self):
         self.assertEqual(
-            test037(),
-            None,
+            test037("Ivanov Ivan", 50, "St. Petersburg"),
+            '''Ivanov Ivan
+50
+St. Petersburg''',
         )
 

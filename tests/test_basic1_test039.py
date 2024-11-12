@@ -12,7 +12,7 @@ class TestsBasic1Test039(TestCase):
 
     def test_case1(self):
         self.assertEqual(
-            test039(),
-            None,
+            test039(10000, 3.5, 7),
+            12722.79,
         )
 
