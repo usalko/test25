@@ -37,3 +37,6 @@ from .test036 import *
 from .test037 import *
 from .test038 import *
 from .test039 import *
+from .test040 import *
+from .test041 import *
+from .test042 import *

@@ -37,3 +37,6 @@ from .test_basic1_test036 import *
 from .test_basic1_test037 import *
 from .test_basic1_test038 import *
 from .test_basic1_test039 import *
+from .test_basic1_test040 import *
+from .test_basic1_test041 import *
+from .test_basic1_test042 import *
