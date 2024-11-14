@@ -1,3 +1,4 @@
+from math import sqrt
 from unittest import TestCase
 
 from basic1 import test040
@@ -10,7 +11,7 @@ class TestsBasic1Test040(TestCase):
 
     def test_case1(self):
         self.assertEqual(
-            test040(),
-            None,
+            test040((1, 1), (2, 2)),
+            sqrt(2),
         )
 

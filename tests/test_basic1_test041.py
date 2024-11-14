@@ -10,7 +10,7 @@ class TestsBasic1Test041(TestCase):
 
     def test_case1(self):
         self.assertEqual(
-            test041(),
-            None,
+            test041(__file__),
+            True,
         )
 

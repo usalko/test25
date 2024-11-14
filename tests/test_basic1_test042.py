@@ -1,3 +1,4 @@
+from struct import calcsize
 from unittest import TestCase
 
 from basic1 import test042
@@ -9,8 +10,9 @@ class TestsBasic1Test042(TestCase):
     '''
 
     def test_case1(self):
+        architecture_size = calcsize('P') * 8
         self.assertEqual(
             test042(),
-            None,
+            architecture_size,
         )
 
