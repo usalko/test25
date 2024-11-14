@@ -40,3 +40,6 @@ from .test039 import *
 from .test040 import *
 from .test041 import *
 from .test042 import *
+from .test043 import *
+from .test044 import *
+from .test045 import *
