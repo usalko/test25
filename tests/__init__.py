@@ -43,3 +43,6 @@ from .test_basic1_test042 import *
 from .test_basic1_test043 import *
 from .test_basic1_test044 import *
 from .test_basic1_test045 import *
+from .test_basic1_test046 import *
+from .test_basic1_test047 import *
+from .test_basic1_test048 import *
