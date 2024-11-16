@@ -46,3 +46,6 @@ from .test045 import *
 from .test046 import *
 from .test047 import *
 from .test048 import *
+from .test049 import *
+from .test050 import *
+from .test051 import *
