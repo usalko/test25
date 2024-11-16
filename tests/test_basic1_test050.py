@@ -10,7 +10,7 @@ class TestsBasic1Test050(TestCase):
 
     def test_case1(self):
         self.assertEqual(
-            test050(),
-            None,
+            test050('\t new line\n'),
+            'new line',
         )
 

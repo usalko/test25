@@ -1,7 +1,11 @@
 # basic1/test047.py
 
 
-def test047() -> any:
+from os import cpu_count
+
+
+def test047() -> int:
     '''
+    Find out the number of CPUs used
     '''
-    pass
+    return cpu_count() or 1

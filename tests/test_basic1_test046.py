@@ -1,3 +1,4 @@
+from pathlib import Path
 from unittest import TestCase
 
 from basic1 import test046
@@ -9,8 +10,7 @@ class TestsBasic1Test046(TestCase):
     '''
 
     def test_case1(self):
-        self.assertEqual(
+        self.assertTupleEqual(
             test046(),
-            None,
+            (str(Path(f'{Path(__file__).parent}/../basic1').resolve()), 'test046.py')
         )
-
