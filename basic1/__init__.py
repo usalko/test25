@@ -52,3 +52,6 @@ from .test051 import *
 from .test052 import *
 from .test053 import *
 from .test054 import *
+from .test055 import *
+from .test056 import *
+from .test057 import *
