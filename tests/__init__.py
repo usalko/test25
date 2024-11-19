@@ -55,3 +55,6 @@ from .test_basic1_test054 import *
 from .test_basic1_test055 import *
 from .test_basic1_test056 import *
 from .test_basic1_test057 import *
+from .test_basic1_test058 import *
+from .test_basic1_test059 import *
+from .test_basic1_test060 import *

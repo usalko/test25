@@ -55,3 +55,6 @@ from .test054 import *
 from .test055 import *
 from .test056 import *
 from .test057 import *
+from .test058 import *
+from .test059 import *
+from .test060 import *
