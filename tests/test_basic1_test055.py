@@ -9,7 +9,6 @@ class TestsBasic1Test055(TestCase):
     '''
 
     def test_case1(self):
-        self.assertEqual(
-            test055(),
-            None,
+        self.assertTrue(
+           [x for x in test055() if x.startswith('127.0.')]
         )

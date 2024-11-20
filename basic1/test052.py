@@ -1,7 +1,9 @@
 # basic1/test052.py
 
 
-def test052() -> any:
+def test052(text: str) -> None:
     '''
+    Print to STDERR
     '''
-    pass
+    import sys
+    print(text, file=sys.stderr)

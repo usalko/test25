@@ -1,7 +1,12 @@
 # basic1/test055.py
 
 
-def test055() -> any:
+from socket import gethostbyname_ex, gethostname
+from typing import List
+
+
+def test055() -> List[str]:
     '''
+    Get local IP addresses using Python's stdlib
     '''
-    pass
+    return gethostbyname_ex(gethostname())[2]

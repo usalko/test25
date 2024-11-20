@@ -1,7 +1,11 @@
 # basic1/test053.py
 
 
-def test053() -> any:
+from os import getenv
+
+
+def test053(variable_name: str) -> str:
     '''
+    Access environment variables
     '''
-    pass
+    return getenv(variable_name)

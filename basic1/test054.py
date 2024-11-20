@@ -1,7 +1,11 @@
 # basic1/test054.py
 
 
-def test054() -> any:
+from getpass import getuser
+
+
+def test054() -> str:
     '''
+    Get the current username
     '''
-    pass
+    return getuser()
