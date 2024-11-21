@@ -61,3 +61,6 @@ from .test060 import *
 from .test061 import *
 from .test062 import *
 from .test063 import *
+from .test064 import *
+from .test065 import *
+from .test066 import *
