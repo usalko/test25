@@ -1,3 +1,4 @@
+from pathlib import Path
 from unittest import TestCase
 
 from basic1 import test063
@@ -9,7 +10,8 @@ class TestsBasic1Test063(TestCase):
     '''
 
     def test_case1(self):
+        file_name = __file__
         self.assertEqual(
-            test063(),
-            None,
+            test063(file_name),
+            str(Path(file_name).resolve().absolute()),
         )

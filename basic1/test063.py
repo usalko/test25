@@ -1,7 +1,11 @@
 # basic1/test063.py
 
 
-def test063(a: float, b: float) -> float:
+from os.path import realpath
+
+
+def test063(file_name: str) -> str:
     '''
+    Get an absolute file path.
     '''
-    pass
+    return realpath(file_name)

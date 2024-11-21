@@ -10,6 +10,12 @@ class TestsBasic1Test061(TestCase):
 
     def test_case1(self):
         self.assertEqual(
-            test061(),
-            None,
+            test061(2000),
+            (24, 666, 0),
+        )
+
+    def test_case2(self):
+        self.assertEqual(
+            test061(10000),
+            (12, 1573, 1),
         )
