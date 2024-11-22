@@ -61,3 +61,9 @@ from .test_basic1_test060 import *
 from .test_basic1_test061 import *
 from .test_basic1_test062 import *
 from .test_basic1_test063 import *
+from .test_basic1_test064 import *
+from .test_basic1_test065 import *
+from .test_basic1_test066 import *
+from .test_basic1_test067 import *
+from .test_basic1_test068 import *
+from .test_basic1_test069 import *
