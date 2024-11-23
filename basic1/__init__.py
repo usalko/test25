@@ -67,3 +67,6 @@ from .test066 import *
 from .test067 import *
 from .test068 import *
 from .test069 import *
+from .test070 import *
+from .test071 import *
+from .test072 import *
