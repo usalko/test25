@@ -73,3 +73,6 @@ from .test_basic1_test072 import *
 from .test_basic1_test073 import *
 from .test_basic1_test074 import *
 from .test_basic1_test075 import *
+from .test_basic1_test076 import *
+from .test_basic1_test077 import *
+from .test_basic1_test078 import *
