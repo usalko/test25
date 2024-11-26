@@ -76,3 +76,6 @@ from .test075 import *
 from .test076 import *
 from .test077 import *
 from .test078 import *
+from .test079 import *
+from .test080 import *
+from .test081 import *
