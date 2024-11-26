@@ -1,7 +1,11 @@
 # basic1/test068.py
 
 
-def test068() -> None:
+from functools import reduce
+
+
+def test068(input_number: int) -> int:
     '''
+    Calculate sum of digits of a number
     '''
-    pass
+    return reduce(lambda x, y: x + y, map(lambda x: int(x), [c for c in str(input_number)]))

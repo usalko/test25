@@ -9,7 +9,7 @@ class TestsBasic1Test069(TestCase):
     '''
 
     def test_case1(self):
-        self.assertEqual(
-            test069(),
-            None,
+        self.assertListEqual(
+            test069(5, 6, 3),
+            [3, 5, 6],
         )

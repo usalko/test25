@@ -10,7 +10,7 @@ class TestsBasic1Test067(TestCase):
     '''
 
     def test_case1(self):
-        self.assertEqual(
-            test067(),
-            None,
+        self.assertTupleEqual(
+            test067(101.325),
+            (14.696, 760.0, 1.0),
         )
