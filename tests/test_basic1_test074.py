@@ -10,6 +10,18 @@ class TestsBasic1Test074(TestCase):
 
     def test_case1(self):
         self.assertEqual(
-            test074(),
-            None,
+            test074('This'),
+            43899995373,
+        )
+
+    def test_case2(self):
+        self.assertEqual(
+            test074('That'),
+            43899931916,
+        )
+
+    def test_case3(self):
+        self.assertEqual(
+            test074('Those'),
+            43900042989,
         )
