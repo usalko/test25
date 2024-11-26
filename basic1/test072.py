@@ -1,7 +1,12 @@
 # basic1/test072.py
 
 
-def test072() -> None:
+
+from typing import List
+
+
+def test072(module) -> List[str]:
     '''
+    Get the details of the math module
     '''
-    pass
+    return dir(module)

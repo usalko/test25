@@ -9,7 +9,9 @@ class TestsBasic1Test072(TestCase):
     '''
 
     def test_case1(self):
+        import math
+        
         self.assertEqual(
-            test072(),
-            None,
+            test072(math),
+            dir(math),
         )

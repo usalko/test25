@@ -1,14 +1,14 @@
 # basic1/test070.py
 
-from os import listdir
 from pathlib import Path
+from typing import List
 
 
-def test070(dirname: str) -> None:
+def test070(files: List[str]) -> List[str]:
     '''
     Sort files by date
     '''
-    filepaths = listdir(dirname)
-    filepaths.sort(key=lambda x: Path(dirname, x).lstat().st_ctime)
+    filepaths = [str(Path(file).absolute().resolve()) for file in files]
+    filepaths.sort(key=lambda x: Path(x).lstat().st_ctime)
     filepaths.reverse()
-    return [str(Path(dirname, filename).absolute().resolve()) for filename in filepaths]
+    return filepaths

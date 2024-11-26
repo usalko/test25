@@ -1,5 +1,6 @@
 from os import remove, removedirs
 from pathlib import Path
+from random import randint
 from tempfile import NamedTemporaryFile, TemporaryDirectory
 from typing import List, Tuple
 from unittest import TestCase
@@ -12,7 +13,8 @@ class TestsBasic1Test070(TestCase):
     Write a Python program to sort files by date.
     '''
     
-    def create_tmp_files(self, dir_prefix: str) -> Tuple[str, List[str]]:
+    @staticmethod
+    def create_tmp_files(dir_prefix: str) -> Tuple[str, List[str]]:
         tmpdir_name = ''
         with TemporaryDirectory(prefix=dir_prefix, delete=False) as tmpdir:
             tmpdir_name = tmpdir
@@ -26,13 +28,41 @@ class TestsBasic1Test070(TestCase):
             sorted_by_creation_time_filenames.append(str(Path(filename).absolute().resolve()))
 
         return tmpdir_name, sorted_by_creation_time_filenames
+    
+    @staticmethod
+    def randomize(input: List[str]) -> None:
+        if len(input) < 2:
+            return
+        for i in range(0, int(len(input) / 2)):
+            j = randint(0, len(input) - 1)
+            while i == j:
+                j = randint(0, len(input) - 1)
+            value_i = input[i]
+            input[i] = input[j]
+            input[j] = value_i
+            
+
+    def assertListNotEqual(self, list_a: List[str], list_b: List[str]) -> None:
+        if len(list_a) != len(list_b):
+            return
+        for i in range(0, len(list_a)):
+            if list_a[i] != list_b[i]:
+                return
+        self.assertTrue(False)
 
     def test_case1(self):
         folder, sorted_absolute_filenames = self.create_tmp_files('test070')
+        input_filenames = [file_name for file_name in sorted_absolute_filenames]
+        self.randomize(input_filenames)
         
         try:
+            self.assertListNotEqual(
+                input_filenames,
+                sorted_absolute_filenames,
+            )
+
             self.assertListEqual(
-                test070(folder),
+                test070(input_filenames),
                 sorted_absolute_filenames,
             )
         finally:
