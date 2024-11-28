@@ -82,3 +82,6 @@ from .test081 import *
 from .test082 import *
 from .test083 import *
 from .test084 import *
+from .test085 import *
+from .test086 import *
+from .test087 import *
