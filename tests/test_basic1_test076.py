@@ -1,6 +1,7 @@
 from unittest import TestCase
 
 from basic1 import test076
+from sys import orig_argv
 
 
 class TestsBasic1Test076(TestCase):
@@ -9,7 +10,8 @@ class TestsBasic1Test076(TestCase):
     '''
 
     def test_case1(self):
-        self.assertEqual(
+        args = test076()
+        self.assertListEqual(
             test076(),
-            None,
+            orig_argv[-len(args):],
         )
