@@ -1,3 +1,4 @@
+from sys import modules
 from unittest import TestCase
 
 from basic1 import test078
@@ -9,7 +10,8 @@ class TestsBasic1Test078(TestCase):
     '''
 
     def test_case1(self):
-        self.assertEqual(
-            test078(),
-            None,
+        loaded_builtin_modules = [module_name for module_name, module in modules.items() if 'builtin' in str(module.__loader__).lower()]
+        loaded_builtin_modules.sort()
+        self.assertTrue(
+            set(test078()).issuperset(loaded_builtin_modules),
         )
