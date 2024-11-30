@@ -10,6 +10,12 @@ class TestsBasic1Test083(TestCase):
 
     def test_case1(self):
         self.assertEqual(
-            test083(),
-            None,
+            test083([1, 2, 3], 0),
+            True,
+        )
+
+    def test_case2(self):
+        self.assertEqual(
+            test083([10, 20, 30], 40),
+            False,
         )

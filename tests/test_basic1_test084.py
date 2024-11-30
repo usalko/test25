@@ -10,6 +10,6 @@ class TestsBasic1Test084(TestCase):
 
     def test_case1(self):
         self.assertEqual(
-            test084(),
-            None,
+            test084('Case sensitive', 'e'),
+            3,
         )

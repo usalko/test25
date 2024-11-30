@@ -12,7 +12,7 @@ class TestsBasic1Test070(TestCase):
     '''
     Write a Python program to sort files by date.
     '''
-    
+
     @staticmethod
     def create_tmp_files(dir_prefix: str) -> Tuple[str, List[str]]:
         tmpdir_name = ''
@@ -25,10 +25,11 @@ class TestsBasic1Test070(TestCase):
             with NamedTemporaryFile(dir=tmpdir_name, prefix=name, suffix='.txt', delete_on_close=False, delete=False) as writer:
                 writer.write(b' ')
                 filename = writer.name
-            sorted_by_creation_time_filenames.append(str(Path(filename).absolute().resolve()))
+            sorted_by_creation_time_filenames.append(
+                str(Path(filename).absolute().resolve()))
 
         return tmpdir_name, sorted_by_creation_time_filenames
-    
+
     @staticmethod
     def randomize(input: List[str]) -> None:
         if len(input) < 2:
@@ -40,7 +41,6 @@ class TestsBasic1Test070(TestCase):
             value_i = input[i]
             input[i] = input[j]
             input[j] = value_i
-            
 
     def assertListNotEqual(self, list_a: List[str], list_b: List[str]) -> None:
         if len(list_a) != len(list_b):
@@ -52,9 +52,10 @@ class TestsBasic1Test070(TestCase):
 
     def test_case1(self):
         folder, sorted_absolute_filenames = self.create_tmp_files('test070')
-        input_filenames = [file_name for file_name in sorted_absolute_filenames]
+        input_filenames = [
+            file_name for file_name in sorted_absolute_filenames]
         self.randomize(input_filenames)
-        
+
         try:
             self.assertListNotEqual(
                 input_filenames,

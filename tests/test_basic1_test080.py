@@ -1,3 +1,4 @@
+from sys import getrecursionlimit
 from unittest import TestCase
 
 from basic1 import test080
@@ -11,5 +12,5 @@ class TestsBasic1Test080(TestCase):
     def test_case1(self):
         self.assertEqual(
             test080(),
-            None,
+            getrecursionlimit(),
         )

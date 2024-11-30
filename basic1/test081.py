@@ -1,7 +1,8 @@
 # basic1/test081.py
 
 
-def test081() -> None:
+def test081(*args) -> None:
     '''
+    Concatenate N strings.
     '''
-    pass
+    return ''.join(map(str, args))
