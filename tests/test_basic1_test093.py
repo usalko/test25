@@ -9,7 +9,8 @@ class TestsBasic1Test093(TestCase):
     '''
 
     def test_case1(self):
-        self.assertEqual(
-            test093(),
-            None,
+        obj = 1
+        self.assertTupleEqual(
+            test093(obj),
+            (id(obj), int, 1),
         )

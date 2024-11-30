@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from basic1 import test093
+from basic1 import test091
 
 
 class TestsBasic1Test093(TestCase):
@@ -9,7 +9,9 @@ class TestsBasic1Test093(TestCase):
     '''
 
     def test_case1(self):
-        self.assertEqual(
-            test093(),
-            None,
+        var1 = '1'
+        var2 = '2'
+        self.assertTupleEqual(
+            test091((var1, var2)),
+            ('2', '1'),
         )

@@ -1,7 +1,11 @@
 # basic1/test093.py
 
 
-def test093() -> None:
+from typing import Tuple, Type
+
+
+def test093(obj: any) -> Tuple[int, Type, any]:
     '''
+    Get Identity, Type, and Value of an object
     '''
-    pass
+    return id(obj), type(obj), obj

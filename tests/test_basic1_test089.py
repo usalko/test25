@@ -11,7 +11,15 @@ class TestsBasic1Test089(TestCase):
     '''
 
     def test_case1(self):
+        tested_value = 2
         self.assertEqual(
-            test089(),
+            test089(tested_value, 1),
             None,
+        )
+
+    def test_case2(self):
+        tested_value = 1
+        self.assertEqual(
+            test089(tested_value, 1),
+            'First day of a Month!',
         )

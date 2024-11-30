@@ -1,3 +1,4 @@
+from string import punctuation
 from unittest import TestCase
 
 from basic1 import test092
@@ -9,7 +10,8 @@ class TestsBasic1Test092(TestCase):
     '''
 
     def test_case1(self):
-        self.assertEqual(
-            test092(),
-            None,
-        )
+        for special_character in punctuation:
+            self.assertEqual(
+                test092(special_character, '\\'),
+                '\\' + special_character,
+            )
