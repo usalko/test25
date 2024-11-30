@@ -10,6 +10,12 @@ class TestsBasic1Test086(TestCase):
 
     def test_case1(self):
         self.assertEqual(
-            test086(),
-            None,
+            test086('a'),
+            0x61,
+        )
+
+    def test_case2(self):
+        self.assertEqual(
+            test086('b'),
+            0x62,
         )

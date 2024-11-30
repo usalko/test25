@@ -1,7 +1,11 @@
 # basic1/test087.py
 
 
-def test087() -> None:
+from pathlib import Path
+
+
+def test087(file_name: str) -> int:
     '''
+    Get the size of a file
     '''
-    pass
+    return Path(file_name).stat().st_size
