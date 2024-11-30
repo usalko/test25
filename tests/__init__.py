@@ -88,3 +88,6 @@ from .test_basic1_test087 import *
 from .test_basic1_test088 import *
 from .test_basic1_test089 import *
 from .test_basic1_test090 import *
+from .test_basic1_test091 import *
+from .test_basic1_test092 import *
+from .test_basic1_test093 import *
