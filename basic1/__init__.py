@@ -91,3 +91,6 @@ from .test090 import *
 from .test091 import *
 from .test092 import *
 from .test093 import *
+from .test094 import *
+from .test095 import *
+from .test096 import *
