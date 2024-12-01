@@ -9,7 +9,6 @@ class TestsBasic1Test096(TestCase):
     '''
 
     def test_case1(self):
-        self.assertTupleEqual(
-            test096(),
-            None,
+        self.assertTrue(
+            'test096' in test096(),
         )

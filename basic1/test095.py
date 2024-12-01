@@ -1,10 +1,10 @@
 # basic1/test095.py
 
 
-from typing import Tuple, Type
 
 
-def test095() -> None:
+def test095(input_string: str) -> bool:
     '''
+    Check whether a string is numeric.
     '''
-    pass
+    return input_string.isdecimal()

@@ -9,7 +9,13 @@ class TestsBasic1Test095(TestCase):
     '''
 
     def test_case1(self):
-        self.assertTupleEqual(
-            test095(),
-            None,
+        self.assertEqual(
+            test095('q1234'),
+            False,
+        )
+
+    def test_case2(self):
+        self.assertEqual(
+            test095('123456'),
+            True,
         )
