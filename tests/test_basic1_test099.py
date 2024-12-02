@@ -11,5 +11,5 @@ class TestsBasic1Test099(TestCase):
     def test_case1(self):
         self.assertEqual(
             test099(),
-            None,
+            0,
         )

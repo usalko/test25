@@ -1,3 +1,4 @@
+from sysconfig import get_config_vars
 from unittest import TestCase
 
 from basic1 import test097
@@ -9,7 +10,7 @@ class TestsBasic1Test097(TestCase):
     '''
 
     def test_case1(self):
-        self.assertEqual(
+        self.assertListEqual(
             test097(),
-            None,
+            list(get_config_vars().keys()),
         )
