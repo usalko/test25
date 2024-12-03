@@ -97,3 +97,6 @@ from .test_basic1_test096 import *
 from .test_basic1_test097 import *
 from .test_basic1_test098 import *
 from .test_basic1_test099 import *
+from .test_basic1_test100 import *
+from .test_basic1_test101 import *
+from .test_basic1_test102 import *
