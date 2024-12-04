@@ -100,3 +100,6 @@ from .test_basic1_test099 import *
 from .test_basic1_test100 import *
 from .test_basic1_test101 import *
 from .test_basic1_test102 import *
+from .test_basic1_test103 import *
+from .test_basic1_test104 import *
+from .test_basic1_test105 import *
