@@ -103,3 +103,6 @@ from .test102 import *
 from .test103 import *
 from .test104 import *
 from .test105 import *
+from .test106 import *
+from .test107 import *
+from .test108 import *
