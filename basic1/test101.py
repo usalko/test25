@@ -1,7 +1,13 @@
 # basic1/test101.py
 
 
-def test101() -> None:
+from http.client import HTTPResponse
+from urllib.request import urlopen
+
+
+def test101(url: str) -> str:
     '''
+    Get URL's content.
     '''
-    pass
+    response: HTTPResponse = urlopen(url)
+    return str(response.read1(), encoding='utf-8')

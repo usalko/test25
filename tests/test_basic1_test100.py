@@ -1,6 +1,7 @@
 from unittest import TestCase
 
 from basic1 import test100
+from os import popen
 
 
 class TestsBasic1Test100(TestCase):
@@ -11,5 +12,5 @@ class TestsBasic1Test100(TestCase):
     def test_case1(self):
         self.assertEqual(
             test100(),
-            None,
+            popen('hostname').readlines()[0].strip(" \n"),
         )

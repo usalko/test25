@@ -1,7 +1,11 @@
 # basic1/test102.py
 
 
-def test102() -> None:
+from os import popen
+
+
+def test102(command: str) -> str:
     '''
+    Get system command output.
     '''
-    pass
+    return popen(command).readlines()

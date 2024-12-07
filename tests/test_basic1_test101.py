@@ -9,7 +9,7 @@ class TestsBasic1Test101(TestCase):
     '''
 
     def test_case1(self):
-        self.assertEqual(
-            test101(),
-            None,
+        content = test101('https://google.com')
+        self.assertTrue(
+            '<html' in content,
         )
