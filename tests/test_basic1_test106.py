@@ -9,7 +9,7 @@ class TestsBasic1Test106(TestCase):
     '''
 
     def test_case1(self):
-        self.assertEqual(
-            test106(),
-            None,
+        self.assertListEqual(
+            test106('./path/file.ext'),
+            ['./path/file', 'ext'],
         )

@@ -10,6 +10,6 @@ class TestsBasic1Test108(TestCase):
 
     def test_case1(self):
         self.assertEqual(
-            test108(),
-            None,
+            test108('This is the path to temp folder /tmp isn\'t it?'),
+            '/tmp',
         )

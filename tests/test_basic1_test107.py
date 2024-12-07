@@ -9,7 +9,8 @@ class TestsBasic1Test107(TestCase):
     '''
 
     def test_case1(self):
+        properties = test107(__file__)
         self.assertEqual(
-            test107(),
-            None,
+            properties.st_size,
+            319,
         )

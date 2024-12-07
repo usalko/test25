@@ -1,7 +1,11 @@
 # basic1/test106.py
 
 
-def test106() -> None:
+from typing import List
+
+
+def test106(path: str) -> List[str]:
     '''
+    Divide a path by the extension separator
     '''
-    pass
+    return path.rsplit('.', 1)

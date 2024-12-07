@@ -1,7 +1,11 @@
 # basic1/test107.py
 
 
-def test107() -> None:
+from os import stat, stat_result
+
+
+def test107(path: str) -> stat_result:
     '''
+    Retrieve file properties.
     '''
-    pass
+    return stat(path, follow_symlinks=True)
