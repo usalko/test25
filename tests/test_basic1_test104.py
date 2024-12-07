@@ -1,3 +1,4 @@
+from os import name
 from unittest import TestCase
 
 from basic1 import test104
@@ -11,7 +12,19 @@ class TestsBasic1Test104(TestCase):
     '''
 
     def test_case1(self):
-        self.assertEqual(
-            test104(),
-            None,
+        if name != 'posix':
+            return
+        effective_group_id, effective_user_id, real_group_id, supplemental_groups = test104()
+        self.assertIsNotNone(
+            effective_group_id
         )
+        self.assertIsNotNone(
+            effective_user_id
+        )
+        self.assertIsNotNone(
+            real_group_id
+        )
+        self.assertIsNotNone(
+            supplemental_groups
+        )
+

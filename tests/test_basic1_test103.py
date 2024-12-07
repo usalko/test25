@@ -10,6 +10,6 @@ class TestsBasic1Test103(TestCase):
 
     def test_case1(self):
         self.assertEqual(
-            test103(),
-            None,
+            test103('./any/any/path.txt'),
+            'path.txt',
         )
