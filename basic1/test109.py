@@ -1,7 +1,15 @@
 # basic1/test109.py
 
+from typing import Literal
 
-def test109() -> None:
+NUMBER_TYPE = Literal['positive', 'negative', 'zero']
+
+def test109(number: int) -> NUMBER_TYPE:
     '''
+    Check if a number is positive, negative or zero.
     '''
-    pass
+    if number < 0:
+        return 'negative'
+    if number > 0:
+        return 'positive'
+    return 'zero'

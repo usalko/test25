@@ -1,7 +1,11 @@
 # basic1/test110.py
 
 
-def test110() -> None:
+from typing import Callable, List
+
+
+def test110(numbers: List[int], check: Callable[[int], bool]) -> List[int]:
     '''
+    Get numbers divisible by fifteen from a list using an anonymous function.
     '''
-    pass
+    return list(filter(check, numbers))

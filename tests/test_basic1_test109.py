@@ -10,6 +10,18 @@ class TestsBasic1Test109(TestCase):
 
     def test_case1(self):
         self.assertEqual(
-            test109(),
-            None,
+            test109(-3),
+            'negative',
+        )
+
+    def test_case2(self):
+        self.assertEqual(
+            test109(3),
+            'positive',
+        )
+
+    def test_case3(self):
+        self.assertEqual(
+            test109(0),
+            'zero',
         )
