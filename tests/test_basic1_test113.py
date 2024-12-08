@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from basic1 import test113
+from basic1 import test113, NotANumberException
 
 
 class TestsBasic1Test113(TestCase):
@@ -10,6 +10,13 @@ class TestsBasic1Test113(TestCase):
 
     def test_case1(self):
         self.assertEqual(
-            test113(),
-            None,
+            test113(1),
+            True,
+        )
+
+    def test_case2(self):
+        self.assertRaises(
+            NotANumberException,
+            test113,
+            ''
         )
