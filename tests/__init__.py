@@ -115,3 +115,6 @@ from .test_basic1_test114 import *
 from .test_basic1_test115 import *
 from .test_basic1_test116 import *
 from .test_basic1_test117 import *
+from .test_basic1_test118 import *
+from .test_basic1_test119 import *
+from .test_basic1_test120 import *
