@@ -3,5 +3,6 @@
 
 def test118() -> None:
     '''
+    Create a bytearray from a list.
     '''
     pass

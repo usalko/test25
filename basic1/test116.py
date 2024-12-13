@@ -3,5 +3,6 @@
 
 def test116() -> None:
     '''
+    Print Unicode characters.
     '''
     pass
