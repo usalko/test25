@@ -148,3 +148,6 @@ from .test_basic1_test147 import *
 from .test_basic1_test148 import *
 from .test_basic1_test149 import *
 from .test_basic1_test150 import *
+from .test_basic2_test151 import *
+from .test_basic2_test152 import *
+from .test_basic2_test153 import *
